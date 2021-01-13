@@ -34,6 +34,16 @@
 	    <version>2.2</version>
 	</dependency>
 	
+	<!-- This dependency is required for rule assets in Red Hat Decision Manager to be built from executable rule models by default. This dependency is included as part of the Red Hat Decision Manager core packaging, but depending on your Red Hat Decision Manager upgrade history, you may need to manually add this dependency to enable the executable rule model behavior. -->
+	<!-- https://mvnrepository.com/artifact/org.drools/drools-model-compiler -->
+	<dependency>
+	    <groupId>org.drools</groupId>
+	    <artifactId>drools-model-compiler</artifactId>
+	    <version>7.47.0.Final</version>
+	</dependency>
+
+	
+	
 	
 	</dependencies>
 	
