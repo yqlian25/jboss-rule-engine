@@ -34,15 +34,53 @@
 	    <version>2.2</version>
 	</dependency>
 	
-	<!-- https://mvnrepository.com/artifact/org.drools/drools-core -->
 	<!-- This dependency is required for rule assets in Red Hat Decision Manager to be built from executable rule models by default. This dependency is included as part of the Red Hat Decision Manager core packaging, but depending on your Red Hat Decision Manager upgrade history, you may need to manually add this dependency to enable the executable rule model behavior. -->
+	<!-- https://mvnrepository.com/artifact/org.drools/drools-model-compiler -->
 	<dependency>
 	    <groupId>org.drools</groupId>
-	    <artifactId>drools-core</artifactId>
+	    <artifactId>drools-model-compiler</artifactId>
 	    <version>7.47.0.Final</version>
 	</dependency>
 	
 	
+	
+	
+	
+	<!-- kie-ci: Enables your client application to load Business Central project data locally using ReleaseId
+         kie-server-client: Enables your client application to interact remotely with assets on KIE Server
+         slf4j: (Optional) Enables your client application to use Simple Logging Facade for Java (SLF4J) to return debug logging information after you interact with KIE Server -->
+	<!-- For local execution -->
+	<!--
+	<dependency>
+	  <groupId>org.kie</groupId>
+	  <artifactId>kie-ci</artifactId>
+	  <version>7.39.0.Final-redhat-00005</version>
+	</dependency>
+	
+	For remote execution on KIE Server
+	<dependency>
+	  <groupId>org.kie.server</groupId>
+	  <artifactId>kie-server-client</artifactId>
+	  <version>7.39.0.Final-redhat-00005</version>
+	</dependency> -->
+	
+	
+	
+	<!-- For debug logging (optional) -->
+	<dependency>
+	  <groupId>org.slf4j</groupId>
+	  <artifactId>slf4j-simple</artifactId>
+	  <version>1.7.25</version>
+	</dependency>
+	
+	
+	<!-- <dependency>
+	  <groupId>com.redhat.ba</groupId>
+	  <artifactId>ba-platform-bom</artifactId>
+	  <version>7.8.0.redhat-00005</version>
+	  <scope>import</scope>
+	  <type>pom</type>
+	</dependency> -->
 	
 	</dependencies>
 	
